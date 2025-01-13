@@ -1,0 +1,152 @@
+.mea-easy-launch-app .vld-overlay .vld-icon svg {
+  fill: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mea-easy-launch-app {
+  background: transparent;
+  border-radius: 15px;
+  width: 200px;
+  height: 316px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.mea-easy-launch-container {
+  height: 100%;
+  display: flex;
+  width: 137px;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding-left: 65px;
+}
+
+.mea-pan-result,
+.mea-cardholder-result,
+.mea-expiry-result,
+.mea-cvv-result {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mea-field-pan-name,
+.mea-field-cardholder-name,
+.mea-field-expiry-name,
+.mea-field-cvv-name {
+  margin-right: 10px;
+}
+.mea-field-pan-name {
+  display: none;
+}
+
+.mea-pan-result {
+  margin-bottom: 20px;
+}
+
+.mea-field-pan-value {
+  font-size: 22px;
+  display: inline-block;
+  word-break: break-word;
+  width: 109px;
+  right: 6px;
+  margin-right: -12px;
+
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mea-cardholder-result {
+  display: none;
+}
+
+.mea-field-expiry-name, .mea-field-cvv-name {
+  display: none;
+}
+.mea-field-expiry-value, .mea-field-cvv-value {
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 12px;
+}
+
+.mea-field-expiry-value:before {
+  content: "Valida hasta";
+  font-size: 8px;
+  position: absolute;
+  top: -13px;
+  width: 44px;
+  font-weight: 400;
+}
+
+.mea-field-cvv-value:before {
+  content: "CVC";
+  font-size: 8px;
+  position: absolute;
+  top: -13px;
+  font-weight: 400;
+}
+
+.mea-expiry-result {
+  margin-bottom: 10px;
+}
+
+.mea-cvv-result {
+  position: absolute;
+  right: 13px;
+  bottom: 84px;
+}
+
+.mea-preloaded-data-overlay .mea-show-card-details {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 12px;
+  position: absolute;
+  bottom: 12px;
+  left: 64px;
+  z-index: 40;
+}
+
+.mea-copy-btn {
+  background-repeat: no-repeat no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 14px;
+  width: 14px;
+  display: inline-block;
+  margin-left: 9px;
+  margin-top: -10px;
+  vertical-align: bottom;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' standalone='no'?%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 20010904//EN' 'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'%3E%3Csvg version='1.0' xmlns='http://www.w3.org/2000/svg' width='24.000000pt' height='24.000000pt' viewBox='0 0 24.000000 24.000000' preserveAspectRatio='xMidYMid meet'%3E%3Cg transform='translate(0.000000,24.000000) scale(0.100000,-0.100000)' fill='%23000000' stroke='none'%3E%3Cpath d='M20 140 c0 -47 4 -80 10 -80 6 0 10 30 10 70 l0 70 70 0 c40 0 70 4 70 10 0 6 -33 10 -80 10 l-80 0 0 -80z'/%3E%3Cpath d='M60 100 l0 -80 80 0 80 0 0 80 0 80 -80 0 -80 0 0 -80z m140 0 l0 -60 -60 0 -60 0 0 60 0 60 60 0 60 0 0 -60z'/%3E%3C/g%3E%3C/svg%3E");
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(104deg) brightness(103%) contrast(103%);
+  transition: all .2s ease-in;
+}
+
+.mea-copy-btn:hover {
+  filter: invert(92%) sepia(9%) saturate(320%) hue-rotate(202deg) brightness(91%) contrast(91%);
+}
+
+.mea-copy-btn:active {
+  animation: pulse 1s infinite;
+}
+
+.mea-pan-result .mea-pan-copy {
+  margin-left: 13px;
+  margin-top: 0;
+}
